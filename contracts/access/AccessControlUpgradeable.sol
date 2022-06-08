@@ -61,6 +61,7 @@ abstract contract AccessControlUpgradeable is Initializable, ContextUpgradeable,
     mapping(bytes32 => RoleData) private _roles;
 
     bytes32 public constant DEFAULT_ADMIN_ROLE = 0x00;
+    bytes32 public constant ADMIN_ROLE = keccak256("ADMIN_ROLE");
 
     /**
      * @dev Modifier that checks that an account has a specific role. Reverts

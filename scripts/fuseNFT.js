@@ -2,14 +2,14 @@
 const { ethers, upgrades } = require("hardhat");
 
 async function main() {
-  const EnergyNFT = await ethers.getContractFactory("EnergyNFT");
-  const eNFT = await upgrades.deployProxy(EnergyNFT, [], {
+  const FuseNFT = await ethers.getContractFactory("FuseNFT");
+  const fuseNFT = await upgrades.deployProxy(FuseNFT, [], {
     initializer: "initialize",
   });
 
-  await eNFT.deployed();
+  await fuseNFT.deployed();
 
-  console.log("Greeter deployed to:", eNFT.address);
+  console.log("Contract deployed to:", fuseNFT.address);
 }
 
 // We recommend this pattern to be able to use async/await everywhere

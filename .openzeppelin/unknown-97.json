@@ -19,6 +19,11 @@
       "address": "0x91144bD6697d25b06Bf3A19cc97658546902cE16",
       "txHash": "0x8fea3008740f0a6156ed1400a2a6c155c68420ea37d49d9508f734f94cca7ae0",
       "kind": "transparent"
+    },
+    {
+      "address": "0x5db248EA0194F3F7B2208DBca4479e1D4e9568b2",
+      "txHash": "0x50c8bce43b9381169a12942743982728ea57e0f0cf6fb58abf201f0a68259e0f",
+      "kind": "transparent"
     }
   ],
   "impls": {
@@ -597,6 +602,245 @@
               }
             ],
             "numberOfBytes": "32"
+          },
+          "t_uint256": {
+            "label": "uint256",
+            "numberOfBytes": "32"
+          },
+          "t_uint8": {
+            "label": "uint8",
+            "numberOfBytes": "1"
+          }
+        }
+      }
+    },
+    "00336ac504e9f03e6dec60f9e65db0c6de00418775088973241e29d7fa963833": {
+      "address": "0x4bf8b357A3799f4FAf38B4305F7d47787036b5c9",
+      "txHash": "0x5eb302b15b7a4637d04d2df184ca4ccdf5cd539a1de106f2244f3ba3bd26a0cc",
+      "layout": {
+        "storage": [
+          {
+            "label": "_initialized",
+            "offset": 0,
+            "slot": "0",
+            "type": "t_uint8",
+            "contract": "Initializable",
+            "src": "contracts/proxy/utils/Initializable.sol:62",
+            "retypedFrom": "bool"
+          },
+          {
+            "label": "_initializing",
+            "offset": 1,
+            "slot": "0",
+            "type": "t_bool",
+            "contract": "Initializable",
+            "src": "contracts/proxy/utils/Initializable.sol:67"
+          },
+          {
+            "label": "__gap",
+            "offset": 0,
+            "slot": "1",
+            "type": "t_array(t_uint256)50_storage",
+            "contract": "ContextUpgradeable",
+            "src": "contracts/utils/ContextUpgradeable.sol:36"
+          },
+          {
+            "label": "__gap",
+            "offset": 0,
+            "slot": "51",
+            "type": "t_array(t_uint256)50_storage",
+            "contract": "ERC165Upgradeable",
+            "src": "contracts/utils/introspection/ERC165Upgradeable.sol:41"
+          },
+          {
+            "label": "_roles",
+            "offset": 0,
+            "slot": "101",
+            "type": "t_mapping(t_bytes32,t_struct(RoleData)1169_storage)",
+            "contract": "AccessControlUpgradeable",
+            "src": "contracts/access/AccessControlUpgradeable.sol:61"
+          },
+          {
+            "label": "__gap",
+            "offset": 0,
+            "slot": "102",
+            "type": "t_array(t_uint256)49_storage",
+            "contract": "AccessControlUpgradeable",
+            "src": "contracts/access/AccessControlUpgradeable.sol:248"
+          },
+          {
+            "label": "_feeToken",
+            "offset": 0,
+            "slot": "151",
+            "type": "t_address",
+            "contract": "MintingFeeUpgradeable",
+            "src": "contracts/internal/MintingFeeUpgradeable.sol:10"
+          },
+          {
+            "label": "_feeAmount",
+            "offset": 0,
+            "slot": "152",
+            "type": "t_uint256",
+            "contract": "MintingFeeUpgradeable",
+            "src": "contracts/internal/MintingFeeUpgradeable.sol:11"
+          },
+          {
+            "label": "__gap",
+            "offset": 0,
+            "slot": "153",
+            "type": "t_array(t_uint256)50_storage",
+            "contract": "MintingFeeUpgradeable",
+            "src": "contracts/internal/MintingFeeUpgradeable.sol:38"
+          },
+          {
+            "label": "users",
+            "offset": 0,
+            "slot": "203",
+            "type": "t_mapping(t_address,t_struct(User)409_storage)",
+            "contract": "FuseNFT",
+            "src": "contracts/FuseNFT.sol:36"
+          },
+          {
+            "label": "_rawContract",
+            "offset": 0,
+            "slot": "204",
+            "type": "t_address",
+            "contract": "FuseNFT",
+            "src": "contracts/FuseNFT.sol:38"
+          },
+          {
+            "label": "_threshold",
+            "offset": 20,
+            "slot": "204",
+            "type": "t_uint8",
+            "contract": "FuseNFT",
+            "src": "contracts/FuseNFT.sol:39"
+          }
+        ],
+        "types": {
+          "t_address": {
+            "label": "address",
+            "numberOfBytes": "20"
+          },
+          "t_array(t_uint256)49_storage": {
+            "label": "uint256[49]",
+            "numberOfBytes": "1568"
+          },
+          "t_array(t_uint256)50_storage": {
+            "label": "uint256[50]",
+            "numberOfBytes": "1600"
+          },
+          "t_array(t_uint256)dyn_storage": {
+            "label": "uint256[]",
+            "numberOfBytes": "32"
+          },
+          "t_bool": {
+            "label": "bool",
+            "numberOfBytes": "1"
+          },
+          "t_bytes32": {
+            "label": "bytes32",
+            "numberOfBytes": "32"
+          },
+          "t_mapping(t_address,t_bool)": {
+            "label": "mapping(address => bool)",
+            "numberOfBytes": "32"
+          },
+          "t_mapping(t_address,t_struct(User)409_storage)": {
+            "label": "mapping(address => struct FuseNFT.User)",
+            "numberOfBytes": "32"
+          },
+          "t_mapping(t_bytes32,t_struct(RoleData)1169_storage)": {
+            "label": "mapping(bytes32 => struct AccessControlUpgradeable.RoleData)",
+            "numberOfBytes": "32"
+          },
+          "t_mapping(t_uint256,t_struct(Fusion)400_storage)": {
+            "label": "mapping(uint256 => struct FuseNFT.Fusion)",
+            "numberOfBytes": "32"
+          },
+          "t_struct(Fusion)400_storage": {
+            "label": "struct FuseNFT.Fusion",
+            "members": [
+              {
+                "label": "id",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "0"
+              },
+              {
+                "label": "rank",
+                "type": "t_uint8",
+                "offset": 0,
+                "slot": "1"
+              },
+              {
+                "label": "level",
+                "type": "t_uint8",
+                "offset": 1,
+                "slot": "1"
+              },
+              {
+                "label": "startTime",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "2"
+              },
+              {
+                "label": "harvestTime",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "3"
+              },
+              {
+                "label": "index",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "4"
+              },
+              {
+                "label": "inserted",
+                "type": "t_bool",
+                "offset": 0,
+                "slot": "5"
+              }
+            ],
+            "numberOfBytes": "192"
+          },
+          "t_struct(RoleData)1169_storage": {
+            "label": "struct AccessControlUpgradeable.RoleData",
+            "members": [
+              {
+                "label": "members",
+                "type": "t_mapping(t_address,t_bool)",
+                "offset": 0,
+                "slot": "0"
+              },
+              {
+                "label": "adminRole",
+                "type": "t_bytes32",
+                "offset": 0,
+                "slot": "1"
+              }
+            ],
+            "numberOfBytes": "64"
+          },
+          "t_struct(User)409_storage": {
+            "label": "struct FuseNFT.User",
+            "members": [
+              {
+                "label": "fusionIds",
+                "type": "t_array(t_uint256)dyn_storage",
+                "offset": 0,
+                "slot": "0"
+              },
+              {
+                "label": "fusionMap",
+                "type": "t_mapping(t_uint256,t_struct(Fusion)400_storage)",
+                "offset": 0,
+                "slot": "1"
+              }
+            ],
+            "numberOfBytes": "64"
           },
           "t_uint256": {
             "label": "uint256",

@@ -17,7 +17,6 @@ contract EnergyNFT is Initializable, ERC721Upgradeable, ERC721BurnableUpgradeabl
 
     using CountersUpgradeable for CountersUpgradeable.Counter;
 
-    bytes32 public constant MINTER_ROLE = keccak256("MINTER_ROLE");
     bytes32 public constant FUSION_ROLE = keccak256("FUSION_ROLE");
 
     // Base URI for metadata to be accessed at.

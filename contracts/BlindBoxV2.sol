@@ -73,7 +73,7 @@ contract BlindBoxV2 is Initializable, AccessControlUpgradeable {
         
         uint256[] memory tokenIds = new uint[](quantity);
         for (uint256 index = 0; index < quantity; index++) {
-            uint256 tokenId = IERC721EnumerableUpgradeable(nft).tokenOfOwnerByIndex(address(this), index);
+            uint256 tokenId = IERC721EnumerableUpgradeable(nft).tokenOfOwnerByIndex(address(this), 0);
             sellingNft.transferFrom(address(this), msg.sender, tokenId);
             tokenIds[index] = tokenId;
         }

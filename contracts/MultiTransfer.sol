@@ -125,10 +125,10 @@ abstract contract Ownable is Context {
 
 contract MultiTransfer is Ownable {
 
-    function sendERC721(address erc721, uint256[] memory tokenIds) public {
+    function sendERC721(address erc721, address recipient, uint256[] memory tokenIds) public {
         uint256 length = tokenIds.length;
         for (uint i = 0; i < length; i++) {
-            IERC721Upgradeable(erc721).transferFrom(msg.sender, address(this), tokenIds[i]);
+            IERC721Upgradeable(erc721).transferFrom(msg.sender, recipient, tokenIds[i]);
         }
     }
 
